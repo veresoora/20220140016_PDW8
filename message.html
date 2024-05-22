@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="message.css" />
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <p id="h1">Message for me</p>
+        <p id="h4">Name</p>
+        <input
+          id="name"
+          placeholder="Enter your full name"
+          type="text"
+          class="input"
+        />
+
+        <p id="h4">How close are we?<span></span></p>
+        <table>
+          <tbody>
+            <tr>
+              <th class="first-col"></th>
+              <th>Just so you know</th>
+              <th>Not too close</th>
+              <th>Close</th>
+              <th>Very close</th>
+            </tr>
+
+            <tr>
+              <td class="first-col">Our closeness</td>
+              <td><input name="point#2" value="none" type="radio" /></td>
+              <td><input name="point#2" value="none" type="radio" /></td>
+              <td><input name="point#2" value="none" type="radio" /></td>
+              <td><input name="point#2" value="none" type="radio" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="h4">Do you have a message for me?</p>
+        <textarea rows="5"></textarea>
+        <div class="btn-block">
+          <button type="button" onclick="show()">Send</button>
+        </div>
+      </form>
+      <button class="bttn" type="button">
+        <a href="index.html">HOME</a>
+      </button>
+    </div>
+    <script>
+      function show() {
+        var name = document.getElementById("name").value;
+
+        alert(
+          "Hai " +
+            name +
+            ", Thank you for the message or advice. Have a nice day"
+        );
+      }
+    </script>
+  </body>
+</html>
